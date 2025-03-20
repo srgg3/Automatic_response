@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Ответ на анкету</title>
+</head>
+<body>
+    <h1>Ваши данные</h1>
+    <h4>Анкета</h4>
+    <ul>
+        <li>Заголовок: {{ data.title }}</li>
+        <li>Фамилия: {{ data.surname }}</li>
+        <li>Имя: {{ data.name }}</li>
+        <li>Образование: {{ data.education }}</li>
+        <li>Профессия: {{ data.profession }}</li>
+        <li>Пол: {{ data.sex }}</li>
+        <li>Мотивация: {{ data.motivation }}</li>
+        <li>Готовность: {{ data.ready }}</li>
+    </ul>
+</body>
+</html>
